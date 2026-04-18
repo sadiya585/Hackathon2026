@@ -1,13 +1,13 @@
 # TV2Z Research Copilot
 
-An internal multi-agent AI system for the TV2Z product team. Ask a feature or market question in chat — the Supervisor routes it to specialist agents, searches the web in real time, and returns a structured Feature Intelligence Report grounded in TV2Z's actual stack, devices, competitors, and KPN infrastructure.
+An internal multi-agent AI system for the TV2Z product team. Ask a feature or market question in chat — the Supervisor routes it to specialist agents, searches the web in real time, and returns a structured Feature Intelligence Report grounded in TV2Z's actual stack, devices, competitors.
 
 ---
 
 ## Architecture
 
 ```
-PM Chat Input
+Chat Input
       │
       ▼
 Supervisor Agent (GPT-4.1)
@@ -55,7 +55,7 @@ For full feature research queries, the output follows this structure:
 
 - **Executive Summary** — what matters, what TV2Z should do
 - **Per-Competitor Findings** — individually searched, evidence-labelled (🔍 search / 🧠 prior knowledge)
-- **Device Impact Matrix** — Web, SDMC box, Tizen, WebOS, iOS, Android, Roku
+- **Device Impact Matrix** — Web, SDMC box, Tizen, WebOS, iOS, Android, Roku etc
 - **Tech Stack & Implementation** — named libraries, build vs buy, architecture sketch
 - **Live IPTV Considerations** — KPN dependency check ⚠️, HLS/catch-up impact
 - **Market Intelligence** — sizing, operator demand, pricing, EU regulatory landscape
